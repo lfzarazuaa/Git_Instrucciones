@@ -17,7 +17,7 @@ $ git branch --all//Lista los nombres de las versiones incluidas las online con 
 
 $ git checkout -b <nombreDeLaVersion> // Crea el nuevo espacio de la versión y la selecciona.
 
-$ git checkout <nombreDeLaVersion> //Selecciona la versión.
+$ git checkout <rama> //Selecciona la rama.
 
 $ git checkout <hashidentificador> //Selecciona el commit.
 
@@ -51,9 +51,12 @@ $ git clone <url>//Descarga todo el repositorio con veriones anteriores.
 
 $ git pull <nombre> <rama>//Actualiza el repositorio en la pc a como esta el repositorio online.
 
-$ git pull <nombre> --all//Actualiza el repositorio en la pc a como esta el repositorio online.
+$ git pull <nombre> --all//Actualiza todo el repositorio en la pc a como esta el repositorio online.
 
-$ git fetch 
+$ git pull --rebase <nombre> <rama>//Ordena los commit por tiempo y luego hace el merge del pull.
 
-$ git merge
+$ git fetch <nombre>//Descarga los objetos y referencias desde el repositorio online (pull usa este comando como primera cuenta y luego un merge).
+
+$ git merge <rama>//Fusiona la rama que se dice con la que se tiene seleccionada y guarda los cambios en que se tiene seleccionada, puede ser Fast-forward o recursiva (en esta se tienen que eliminar manualmente los conflictos de interferencia).
+
 
