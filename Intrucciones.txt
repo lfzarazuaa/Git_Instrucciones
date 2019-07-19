@@ -1,0 +1,30 @@
+Creando un nuevo repositorio
+$ git init //inicia un repositorio.
+
+$ git status //muestra el estado si hace falta actualizar o agregar archivos por comando.
+
+$ git add texto.txt//git add <nombre.extension>
+
+$ git commit -m "descripcion"// Actualizar el repositorio.
+
+$ git branch <nombre>// Crear nuevo espacio para versión.
+
+$ git branch //Lista los nombres de las versiones (con asterisco la seleccionada).
+
+$ git checkout -b <nombreDeLaVersion> // Crea el nuevo espacio de la versión y la selecciona.
+
+$ git checkout <nombreDeLaVersion> //Selecciona la versión.
+
+$ git branch <nombreDeLaVersion> -D//Eliminar la version.
+
+$ git add . //Agrega todos los archivos de la carpeta.
+
+$ git commit -m "descripcion" // Guardar la nueva version en el repositorio.
+
+$ git log //Muestra todos las actualizaciones ocurridas.
+
+$ git diff <etiquetaA> <etiquetaB> //nos dice las diferencias entre las 2 versiones.
+
+$ git diff HEAD~<#> //Direncias entre el seleccionado y el numero de version anterior (1 es una versión anterior ,2 son versiones, asi consecutivamente).
+
+$ 
