@@ -23,7 +23,7 @@ $ git add . //Agrega todos los archivos faltantes.
 
 $ git commit -m "descripcion" // Guardar la nueva version en el repositorio.
 
-$ git log //Muestra todos las actualizaciones ocurridas.
+$ git log //Muestra todos las actualizaciones ocurridas o comiits.
 
 $ git diff <etiquetaA> <etiquetaB> //nos dice las diferencias entre las 2 versiones.
 
@@ -33,11 +33,21 @@ $ git lodag//Git log --oneline --decorate --all --graph
 
 $ git config --global alias.<nombre> 'comando sin git'//git config --global alias.<nombre> 'log --oneline --decorate --all --graph'
 
-$ git fetch
+$ git remote //Lista los nombres de los remotos.
+
+$ git remote -v //Lista los nombres de los remotos con su url.
+
+$ git remote add <nombre> <url>//Crea el remoto para conectarse con el repositorio online.
+
+$ git push <nombre> <rama>//Actualiza la rama del repositorio online.
+
+$ git push <nombre> --all//Actualiza todas las ramas del repositorio online.
+ 
+$ git fetch 
 
 $ git merge
 
 $ git pull
 
-$ git push
+
 
