@@ -13,9 +13,13 @@ $ git branch <nombre>// Crear nuevo espacio para versión.
 
 $ git branch //Lista los nombres de las versiones (con asterisco la seleccionada).
 
+$ git branch --all//Lista los nombres de las versiones incluidas las online con remote.
+
 $ git checkout -b <nombreDeLaVersion> // Crea el nuevo espacio de la versión y la selecciona.
 
 $ git checkout <nombreDeLaVersion> //Selecciona la versión.
+
+$ git checkout <hashidentificador> //Selecciona el commit.
 
 $ git branch <nombreDeLaVersion> -D//Eliminar la version.
 
@@ -43,11 +47,13 @@ $ git push <nombre> <rama>//Actualiza la rama del repositorio online.
 
 $ git push <nombre> --all//Actualiza todas las ramas del repositorio online.
  
+$ git clone <url>//Descarga todo el repositorio con veriones anteriores.
+
+$ git pull <nombre> <rama>//Actualiza el repositorio en la pc a como esta el repositorio online.
+
+$ git pull <nombre> --all//Actualiza el repositorio en la pc a como esta el repositorio online.
+
 $ git fetch 
 
 $ git merge
-
-$ git pull
-
-
 
