@@ -1,11 +1,13 @@
 Creando un nuevo repositorio
+$ git // Muestra comandos de git.
+
 $ git init //inicia un repositorio.
 
-$ git status //muestra el estado si hace falta actualizar o agregar archivos por comando.
+$ git status //muestra el estado actual del repositorio si hace falta actualizar o agregar archivos por comando.
 
 $ git add texto.txt//git add <nombre.extension>
 
-$ git commit -m "descripcion"// Actualizar el repositorio.
+$ git commit -m "descripcion"// Crea un registro de cambios en el repositorio.
 
 $ git branch <nombre>// Crear nuevo espacio para versión.
 
@@ -17,7 +19,7 @@ $ git checkout <nombreDeLaVersion> //Selecciona la versión.
 
 $ git branch <nombreDeLaVersion> -D//Eliminar la version.
 
-$ git add . //Agrega todos los archivos de la carpeta.
+$ git add . //Agrega todos los archivos faltantes.
 
 $ git commit -m "descripcion" // Guardar la nueva version en el repositorio.
 
@@ -25,6 +27,17 @@ $ git log //Muestra todos las actualizaciones ocurridas.
 
 $ git diff <etiquetaA> <etiquetaB> //nos dice las diferencias entre las 2 versiones.
 
-$ git diff HEAD~<#> //Direncias entre el seleccionado y el numero de version anterior (1 es una versión anterior ,2 son versiones, asi consecutivamente).
+$ git diff HEAD~<#> //Diferencias entre el seleccionado y el numero de version anterior (1 es una versión anterior ,2 son versiones, asi consecutivamente).
 
-$ 
+$ git lodag//Git log --oneline --decorate --all --graph
+
+$ git config --global alias.<nombre> 'comando sin git'//git config --global alias.<nombre> 'log --oneline --decorate --all --graph'
+
+$ git fetch
+
+$ git merge
+
+$ git pull
+
+$ git push
+
